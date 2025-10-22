@@ -1,0 +1,14 @@
+1. install ruckig(https://github.com/pantor/ruckig)
+2. update cmakelist.txt of naruto_traj_opt
+3. sudo apt update
+   sudo apt-get install ros-noetic-trac-ik
+4. sudo apt-get update
+   sudo apt-get install ros-noetic-pinocchio
+5. update libnlopt-dev(if dpkg -L libnlopt-dev and no nlopt.hpp)
+	sudo apt-get remove libnlopt-dev
+	git clone https://github.com/stevengj/nlopt.git
+	cd nlopt
+	mkdir build && cd build
+	cmake ..
+	make
+	sudo make install
